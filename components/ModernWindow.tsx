@@ -24,7 +24,7 @@ const ModernWindow: React.FC<ModernWindowProps> = ({ data, onClose }) => {
            <svg className="w-4 h-4 shadow-sm" viewBox="0 0 24 24" fill="white">
              <path d="M12 2L4 12h16L12 2z"/>
            </svg>
-           <span className="drop-shadow-md">Critical Error - $HTML</span>
+           <span className="drop-shadow-md">Critical Error - $WASD</span>
         </div>
         <button 
           onClick={() => onClose(data.id)}

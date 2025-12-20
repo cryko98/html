@@ -103,7 +103,7 @@ const App: React.FC = () => {
 
           <div className="flex gap-3">
             <a 
-              href="https://x.com/i/communities/2001188753373634818" 
+              href="https://x.com/i/communities/2002194034136105331" 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-[#ece9d8] border-2 border-[#0058e6] p-2 rounded-md hover:brightness-110 transition-all active:scale-95 shadow-md group"
@@ -119,7 +119,7 @@ const App: React.FC = () => {
         <footer className="flex justify-center pb-16">
           <div className="pointer-events-auto bg-[#ece9d8] border-2 border-[#0058e6] p-6 rounded-md max-w-full w-[550px] shadow-2xl">
             <div className="flex flex-col gap-3">
-              <label className="text-[10px] font-bold text-[#0058e6] uppercase tracking-widest font-mono pl-1">CA: EhR8t2Hd9KikSPiRHdHs8WidCLa3T1VEPFpnCsRRpump</label>
+              <label className="text-[10px] font-bold text-[#0058e6] uppercase tracking-widest font-mono pl-1 truncate">CA: {CONTRACT_ADDRESS}</label>
               <div className="flex flex-col md:flex-row gap-3">
                 <div className="bg-white border-2 border-[#0058e6] rounded px-4 py-3 flex-grow flex items-center overflow-hidden">
                     <span className="text-black font-mono text-xs md:text-sm break-all font-bold">{CONTRACT_ADDRESS}</span>
@@ -153,7 +153,7 @@ const App: React.FC = () => {
         
         <div className="flex-grow flex items-center px-4 gap-2 overflow-hidden">
             <div className="bg-[#3d7bad] h-8 px-4 rounded border-r border-[#245edb] flex items-center text-white text-xs font-bold truncate">
-                $HTML Explorer
+                {TICKER} Explorer
             </div>
             <div className="bg-[#3d7bad] h-8 px-4 rounded border-r border-[#245edb] flex items-center text-white text-xs font-bold truncate opacity-60">
                 Pump.fun

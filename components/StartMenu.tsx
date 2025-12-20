@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { TICKER, MAIN_IMG_URL } from '../constants';
 
 interface StartMenuProps {
   onClose: () => void;
@@ -9,17 +10,17 @@ const StartMenu: React.FC<StartMenuProps> = ({ onClose }) => {
   const links = [
     {
       name: 'X.com Community',
-      url: 'https://x.com/i/communities/2001188753373634818',
+      url: 'https://x.com/i/communities/2002194034136105331',
       iconUrl: 'https://abs.twimg.com/responsive-web/client-web/icon-ios.8ea219d5.png'
     },
     {
       name: 'Dexscreener',
-      url: 'https://dexscreener.com/solana/ehr8t2hd9kikspirhdhs8widcla3t1vepfpncsrrpump',
+      url: 'https://dexscreener.com/solana/HAPJPDB55YnjMpxxhoJ9CYQLgpjBPXu7X5i6GKTRCJAA',
       iconUrl: 'https://dexscreener.com/favicon.png'
     },
     {
       name: 'Pump.fun',
-      url: 'https://pump.fun/coin/EhR8t2Hd9KikSPiRHdHs8WidCLa3T1VEPFpnCsRRpump',
+      url: 'https://pump.fun/coin/EAWhwEAu9qcp6wzDVMQzdQ5wcpivWXYUhBDv7huBpump',
       iconUrl: 'https://pump.fun/favicon.ico'
     }
   ];
@@ -32,9 +33,9 @@ const StartMenu: React.FC<StartMenuProps> = ({ onClose }) => {
       {/* User Header */}
       <div className="xp-title-bar p-3 flex items-center gap-3 text-white border-b border-[#0046b4]">
         <div className="w-10 h-10 rounded-md border-2 border-white/50 bg-[#ece9d8] flex items-center justify-center text-xl overflow-hidden shadow-sm">
-           <img src="https://wkkeyyrknmnynlcefugq.supabase.co/storage/v1/object/public/html/logo%20-%202025-12-18T203427.004.png" alt="Logo" className="w-full h-full object-cover" />
+           <img src={MAIN_IMG_URL} alt="Logo" className="w-full h-full object-cover" />
         </div>
-        <span className="font-bold text-sm drop-shadow-md tracking-tight">HTML Administrator</span>
+        <span className="font-bold text-sm drop-shadow-md tracking-tight">{TICKER.replace('$', '')} Administrator</span>
       </div>
 
       <div className="flex bg-white">
