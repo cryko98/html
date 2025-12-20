@@ -24,4 +24,5 @@ export const CRYPTO_SLANG = [
 export const CONTRACT_ADDRESS = "EAWhwEAu9qcp6wzDVMQzdQ5wcpivWXYUhBDv7huBpump";
 export const TICKER = "$WASD";
 export const FULL_NAME = "We Are Sendin Dis";
-export const MAIN_IMG_URL = "https://pbs.twimg.com/media/G8k_4CAWEAAh-Jy?format=png&name=small";
+export const MAIN_IMG_URL = "https://wkkeyyrknmnynlcefugq.supabase.co/storage/v1/object/public/wasd/logo%20-%202025-12-20T051311.770.png";
+export const LOGO_URL = "https://pbs.twimg.com/media/G8lK8lDXIAEnK4x?format=jpg&name=small";

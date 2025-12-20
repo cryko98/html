@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { TICKER, MAIN_IMG_URL } from '../constants';
+import { TICKER, LOGO_URL } from '../constants';
 
 interface StartMenuProps {
   onClose: () => void;
@@ -33,7 +33,7 @@ const StartMenu: React.FC<StartMenuProps> = ({ onClose }) => {
       {/* User Header */}
       <div className="xp-title-bar p-3 flex items-center gap-3 text-white border-b border-[#0046b4]">
         <div className="w-10 h-10 rounded-md border-2 border-white/50 bg-[#ece9d8] flex items-center justify-center text-xl overflow-hidden shadow-sm">
-           <img src={MAIN_IMG_URL} alt="Logo" className="w-full h-full object-cover" />
+           <img src={LOGO_URL} alt="Logo" className="w-full h-full object-cover" />
         </div>
         <span className="font-bold text-sm drop-shadow-md tracking-tight">{TICKER.replace('$', '')} Administrator</span>
       </div>
